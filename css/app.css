@@ -1,20 +1,16 @@
+@import url(../css/header.css);
+@import url(../css/box.css);
+@import url(../css/footer.css);
+
+
 body {
   margin: 0;
- 
 }
 
 .samchu {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-size: 22px;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  background-color: #22223b;
-  font-size: 20px;
-  padding: 25px;
 }
 
 a {
@@ -28,7 +24,6 @@ a {
 
 .p-blog {
   font-size: 15px;
- 
 }
 
 .bio-text {
@@ -57,10 +52,12 @@ a {
   background: url("/Users/samchu/Documents/Udacity/img/light.png");
   background-size: cover;
   background-position: center;
-  
 }
 
-.blog-post, .serv-rale, .news-rale, .font-rale  {
+.blog-post,
+.serv-rale,
+.news-rale,
+.font-rale {
   text-align: center;
   font-family: "Raleway", sans-serif;
 }
@@ -73,25 +70,6 @@ a {
 .heading-names {
   color: black;
 }
-
-.box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid black;
-  box-shadow: 2px 2px 6px grey;
-  border-radius: 1%;
-  margin: 30px 35px;
- 
-}
-
-.blog-text {
-  padding: 15px;
-}
-.blog-img {
-  width: 100%;
-}
-
 
 
 
@@ -107,6 +85,8 @@ a {
   text-align: center;
 }
 
+
+
 .fonts {
   margin-top: 20px;
 }
@@ -114,145 +94,134 @@ a {
 .faimage {
   width: 8%;
 }
-.newsletter{
-    border: 1px solid black;
-    margin: 30px 35px;
-    text-align: center;
-    padding: 15px;
-    box-shadow: 2px 2px 6px grey;
-    border-radius: 1%;
-
+.newsletter {
+  border: 1px solid black;
+  margin: 30px 35px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 2px 2px 6px grey;
+  border-radius: 1%;
 }
 #email {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 
-
-footer {
-  text-align: center;
-  border: 1px solid black;
-  background-color: #22223b;
-  color: white;
-}
 
 
 @media (min-width: 900px) {
 
-    .container {
-        
-        display:grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: 80px 300px 1000px 700px 250px 100px;
-        grid-template-areas: 
-        "hd hd hd hd hd hd hd hd"
-        "nav nav nav nav nav nav nav nav"
-        "bg bg bg bg bg bg bg bg"
-        "sv sv sv sv sv sv sv sv"
-        "nw nw nw nw nw nw nw nw"
-        "ft ft ft ft ft ft ft ft"
-    }
+  .container {
+      
+      display:grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: 80px 300px 1000px 700px 250px 120px;
+      grid-template-areas: 
+      "hd hd hd hd hd hd hd hd"
+      "nav nav nav nav nav nav nav nav"
+      "bg bg bg bg bg bg bg bg"
+      "sv sv sv sv sv sv sv sv"
+      "nw nw nw nw nw nw nw nw"
+      "ft ft ft ft ft ft ft ft"
+  }
 
-    header {
-        grid-area: hd;
-    }
+  header {
+      grid-area: hd;
+  }
 
-    .bio {
-        grid-area: nav;
-        background-repeat: no-repeat;
-        background-size:cover;
-        background-position: bottom center;
-    }
+  .bio {
+      grid-area: nav;
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-position: bottom center;
+  }
 
-    .bio-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 420px;
-        overflow: visible;
-        color: black;
-        line-height: 0.5px;
-        font-size: 25px;
-        font-family: "Raleway", sans-serif;
-        text-transform: uppercase;
-        font-size: 22px;
-      }
+  .bio-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 420px;
+      overflow: visible;
+      color: black;
+      line-height: 0.5px;
+      font-size: 25px;
+      font-family: "Raleway", sans-serif;
+      text-transform: uppercase;
+      font-size: 22px;
+    }
 
 #mainblog {
- display:flex;
+display:flex;
 }
 
-    .blog-post-heading {
-        grid-area:bg;
-        display:flex;
-        flex-direction: column;
-        margin-top: 17em;
-    }
+  .blog-post-heading {
+      grid-area:bg;
+      display:flex;
+      flex-direction: column;
+      margin-top: 17em;
+  }
 
 
-    .services {
-        grid-area: sv;
-        
-    }
+  .services {
+      grid-area: sv;
+      
+  }
 
-    .faimage{
-        width: 10px;
-    }
-
-
-    .newsletter {
-        grid-area: nw;
-        line-height: 30px;
-        text-align: center;
-   
-       
-    }
-   
-   
-
-    footer {
-        grid-area:ft;
-    }
+  .faimage{
+      width: 10px;
+  }
 
 
-    .services {
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50% 50%;
-        grid-template-areas:
-        "se se"
-        "on on";
-       
-    }
-   
+  .newsletter {
+      grid-area: nw;
+      line-height: 30px;
+      text-align: center;
+ 
+     
+  }
+
+  footer {
+      grid-area:ft;
+  }
+
+
+  .services {
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 50% 50%;
+      grid-template-areas:
+      "se se"
+      "on on";
+     
+  }
+ 
 .service-text {
-    grid-area: se;
- margin-bottom:200px;
+  grid-area: se;
+margin-bottom:200px;
 }
 
 .fontsone {
-    grid-area: on;
-  margin: 30px 0px;
+  grid-area: on;
+margin: 30px 0px;
 }
 .fontstwo{
-   
-    margin: 30px 0px;
+ 
+  margin: 30px 0px;
 }
 
 .onecon {
-    margin-bottom: 200px;
-    
+  margin-bottom: 200px;
+  
 }
 .twocon {
-    margin-bottom: 200px;
-   
+  margin-bottom: 200px;
+ 
 }
 .faimage {
-    width: 4%;
+  width: 4%;
 }
 
-.wholefont {
- 
-
+.social {
+  width: 1.5%;
 }

@@ -1,0 +1,10 @@
+footer {
+  text-align: center;
+  border: 1px solid black;
+  background-color: #22223b;
+  color: white;
+  padding: 10px;
+}
+.social {
+  width: 5.5%;
+}
